@@ -15,8 +15,11 @@ st.set_page_config(
 st.title("Dutch-ish Converter")
 st.write(
     "Type English text and this tool rewrites it as a rough Dutch-ish phonetic "
-    "spelling. It uses dictionary pronunciations, so words with context-dependent "
-    "pronunciations may sometimes pick the wrong version."
+    "spelling."
+)
+st.write(
+    "Typ een Engelse tekst en deze tool herschrijft die als een soort "
+    "Nederlands-achtige fonetische spelling."
 )
 
 text = st.text_area(
@@ -35,13 +38,8 @@ st.text_area(
     label_visibility="collapsed",
 )
 
-if converted:
-    st.button(
-        "Copying is manual for now",
-        disabled=True,
-        help="Select the converted text above and copy it.",
-    )
-
 st.caption(
-    "Built with CMUdict-style pronunciations. Unknown words appear in square brackets."
+    "Built with CMUdict-style dictionary pronunciations, so words with "
+    "context-dependent pronunciations may sometimes pick the wrong version. "
+    "Unknown words appear in square brackets."
 )
