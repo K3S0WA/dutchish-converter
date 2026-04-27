@@ -43,3 +43,4 @@ st.caption(
     "context-dependent pronunciations may sometimes pick the wrong version. "
     "Unknown words appear in square brackets."
 )
+st.caption("Made by Luuk Stehouwer for fun.")
